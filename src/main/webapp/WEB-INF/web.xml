@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>RequestDispatcherEx</display-name>
+  
+  
+ <!--  servlet class for Login Servlet  -->
+   
+  <servlet>
+  <servlet-name>loginServlet</servlet-name>
+  <servlet-class>com.LoginServlet.Login</servlet-class>
+  </servlet>
+  
+  
+  <!--  servlet class  for Welcome Servlet  -->
+  
+   <servlet>
+  <servlet-name>welcomeServlet</servlet-name>
+  <servlet-class>com.LoginServlet.WelcomeServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  <!--  servlet mapping for Login Servlet  -->
+  
+  <servlet-mapping>
+  <servlet-name>loginServlet</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <!--  servlet mapping for Welcome Servlet  -->
+  
+  <servlet-mapping>
+  <servlet-name>welcomeServlet</servlet-name>
+  <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+</web-app>
